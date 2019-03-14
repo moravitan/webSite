@@ -87,13 +87,14 @@ body {
 	width: 100%;
 }
 
+
 #about{
 	font-size: 14px;
-	position: relative;
+	
 }
 
 .section{
-	padding: 50px;
+	padding: 5%;
   line-height: 0.5;
 	text-align: center;
 	color: #444;
@@ -131,11 +132,11 @@ body {
 }
 
 .section p{
-	padding-top: 100px; 
+	padding-top: 10%; 
 }
 
 #about h2{
- padding-bottom: 40px;
+ padding-bottom: 4%;
 }
 
 #about p{
