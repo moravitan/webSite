@@ -134,6 +134,9 @@ body {
 .section p{
 	padding-top: 10%; 
 }
+.section{
+	padding-top: 10%;
+}
 
 #about h2{
  padding-bottom: 4%;
