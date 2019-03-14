@@ -24,7 +24,6 @@ body {
 {
 	background: #55d6aa;
 	margin: 0 auto;
-	height: 100%;
 	width: 100%;
 	float: inline-start;
 	position: fixed;
@@ -90,6 +89,7 @@ body {
 
 #about{
 	font-size: 14px;
+	position: relative;
 }
 
 .section{
