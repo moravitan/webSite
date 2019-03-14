@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>Mor Avitan</title>
+</head>
+<body>
+<div id="menu">
+  <img src="logo.png" class="logo"> 
+  <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#photos">My Photos</a></li>
+      <li><a href="#playlist">My Playlist</a></li>
+      <li><a href="#like">Like</a></li>
+      <li><a href="#qrcoder">QR code</a></li>
+      <li><a href="#spa">Q&A</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+  </ul>
+</div>
+		  
+<section id="about" class="section">
+  <h2><span>About Me</span></h2>
+  <p>My name is Mor Avitan, I'm 24 years old and live in Qiryat Atta.</p>
+  <p>During my studies I enjoy every programming work and find coursed such as Introduction to Data Communications and Security of <br><br>Computers and Communication Networks very intresting.</p>
+  <p>I think the difficult thing in this assignment is learing a new languages, HTML and CSS. However I enjoyed working on
+    this work.</p>
+  <p></p>
+    <br>
+
+  </p>
+</section>
+
+<section id="photos" class="section">
+  <h2><span>Photos</span></h2>
+  <div class="row">
+    <div class="column">
+      <img src="pic4.jpg" alt="picture1">
+    </div>
+    <div class="column">
+      <img src="pic1.jpg" alt="picture2">
+    </div>
+    <div class="column">
+      <img src="pic3.jpg" alt="picture3">
+    </div>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="pic2.jpg" alt="picture2">
+    </div>
+    <div class="column">
+      <img src="pic5.jpg" alt="picture5">
+    </div>
+    <div class="column">
+      <img src="pic6.jpg" alt="picture6">
+    </div>
+  </div>
+</section>
+
+<section id="playlist" class="section">
+  <h2><span>My Playlist</span></h2>
+  <iframe src="https://www.youtube.com/embed/https://www.youtube.com/playlist?list=PLo3pNg0eiPc8rRO3XqFnl1Je2GTu7am-F" width="560" height="315" frameborder="0"></iframe>
+</section>
+
+<section id="like" class="section">
+  <h2><span>Like</span></h2>
+  <iframe src="https://www.facebook.com/plugins/like.php?href=https://moravitan.github.io/MySite/&amp;send=false&amp;layout=standard&amp;width=450&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=80&amp;" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowtransparency="true"></iframe>
+</section>
+
+<section id="qrcoder" class="section">
+    <h2><span>Qr Coder</span></h2>
+    <img src="QR.png" class="QR"> 
+</section>
+
+<section id="spa" class="section">
+  <h2><span>Answers</span></h2>
+  <p id="spaP">1. Three differents betweets WEB 1, WEB 2 and WEB 3:</p>
+  <p id="spaP"> a. Content - WEB 1 was all about <u>companies</u> publishing content that people consume while in WEB 2 companies 
+    built platforms that let <u>people</u> publish <br><br>content that other people can consume and in WEB 3
+    people built applications that people can <u>interact</u> with <br><br> and companies built platforms that
+    let people publish services by leveraging the associations between people or special content</p>
+  <p id="spaP"> b. WEB 1 was all about sharing information while WEB 2 was about creating an interaction between people and WEB 3 is about Immersion</p>
+  <p id="spaP">c. WEB 1 mainly connect information, while WEB 2 connect people and WEB 3 connent knowledge</p>
+  <p id="spaP"> 2. Given the question: what are the side effects of medicions what will be return from WEB 1 and WEB 3?</p>
+  <p id="spaP">WEB 1: at the time of WEB 1 the search was basic and most of the time not accurate, there wasn't a search engine which proccess and analyse text so <br><br> web simply shows the sites and the user had to read 
+    and check if is it relevant for him while most of the time it wasn't. </p>
+  <p id="spaP">WEB 3: at WEB 3 the web moved towards semantic so now, not only that the web can proccess and analyse text, it also can understand the text and <br><br>it's meaning, therefore 
+    now when a user ask a question  like "what are the side effects of medicions" he will get <b>relevant</b> results.
+  </p>
+</section>
+
+<section id="contact" class="section">
+  <h2><span>Contact Me</span></h2>
+  <form action="mailto:moravit@post.bgu.ac.il" method="post" enctype="text/plain">
+        Email Address:
+        <input type="text" name="email">
+        <br>
+        Message:
+        <textarea name="styled-textarea" id="styled" onfocus="this.value=''; setbg('#55d6aa');" onblur="setbg('white')">Enter your comment here...</textarea>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+<!script type="text/javascript">
+  $(function(){
+    $("#nav a").click(function(e){
+      e.preventDefault();
+      $('html,body').scrollTo(this.hash,this.hash); 
+    });
+  });
+  </script>
+  <!script type="text/javascript">
+   $(document).scroll(function() {
+      $('#menu').toggle($(this).scrollTop()>1000)
+   });​
+   </script>
+</body>
+</html>

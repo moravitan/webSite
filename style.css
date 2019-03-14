@@ -1,0 +1,240 @@
+html { overflow-x: hidden; }
+
+html, body{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	padding: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background: white;
+	font-family: 'Calibri';
+	font-size: 20px;
+	font-weight: 800;
+	color: white;
+}
+
+#menu
+{
+	background: #55d6aa;
+	margin: 0 auto;
+	width: 100%;
+	float: inline-start;
+	position: fixed;
+	overflow: hidden;
+	
+}
+
+.logo{
+	padding-left: 50px;
+	width: 100px;
+}
+
+#menu::after {
+  content: '';
+  display: table;
+	clear: both;
+
+}
+
+
+#menu ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu li {
+  display: inline-block;
+	margin-left: 70px;
+	padding-right: 5px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position: relative;
+}
+
+#menu a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+	font-size: 14px;
+}
+
+#menu a:hover {
+	color: #000;
+	
+}
+
+#menu a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+  position: absolute;
+  top: 0;
+  width: 0%;
+	transition: all ease-in-out 250ms;
+}
+
+#menu a:hover::before {
+	width: 100%;
+}
+
+#about{
+	font-size: 14px;
+}
+
+.section{
+	padding: 50px;
+  line-height: 0.5;
+	text-align: center;
+	color: #444;
+	overflow: hidden;
+
+}
+
+.section span{
+  display: inline-block;
+	position: relative;
+	
+	
+}
+
+
+.section span:before, .section span:after {
+  content: "";
+	position: absolute;
+  height: 5px;
+  border-top: 3px solid #55d6aa;
+  top: 10px;
+	width: 700px;
+
+
+}
+
+.section span:before {
+  right: 100%;
+	margin-right: 15px;
+	position: absolute;
+}
+.section span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.section p{
+	padding-top: 100px; 
+}
+
+#about h2{
+ padding-bottom: 40px;
+}
+
+#about p{
+	padding: 0;
+}
+
+#playlist p a{
+	color: #444;
+}
+
+
+#qrcoder img .QR{
+	padding: 90px;
+	padding-bottom: 0px;;
+	height: 100px;
+	width: 100px;
+}
+
+
+#like iframe {
+	padding: 50px;
+	padding-bottom: 0px;
+	color: black;
+}
+
+#qrcoder {
+	padding: 0px;
+	padding-bottom: 0;
+}
+
+/* e-mail form style */
+
+input[type=text]{
+  width: 40%;
+  padding: 5px 30px;
+  margin: 8px 0;
+	box-sizing: border-box;
+	color: #000;
+	font: calibri;
+}
+
+input[type=text]:focus, textarea#styled:focus {
+	border: 3px solid #55d6aa;
+	background: #55d6aa;
+}
+
+textarea#styled {
+	width: 585px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Calibri;
+	background-image: url(bg.gif);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+
+#photos {
+
+	align-items: center;
+}
+
+#photos img {
+	height: 80%;
+	width: 80%;
+	border-radius: 50%;
+	margin-left: 15%;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+	padding: 0%;
+	flex: 33.33%;
+
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {
+	display: flex;
+	
+}
+
+
+@media screen and (max-width: 500px) {
+  .column {
+    width:100%;
+  }
+} 
+
+#spa #spaP {
+	padding: 0;
+	padding-bottom: 0;
+	text-align: left;
+	padding-top: 0px;
+}
